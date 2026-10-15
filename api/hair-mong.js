@@ -16,6 +16,7 @@ export default async function handler(req,res){
   await handleVote(req,buffered,database((sql,args)=>client.query(sql,args)),{origin,adminKey:process.env.ADMIN_KEY||''});
   await client.query('COMMIT');res.writeHead(status,headers);res.end(payload);
  }catch(error){
+  console.error('HairMong DB request failed',{code:error.code||'UNKNOWN',type:error.name||'Error'});
   if(client)await client.query('ROLLBACK').catch(()=>{});
   const status=[400,413,415].includes(error.status)?error.status:503;
   res.writeHead(status,{'Content-Type':'application/json','Cache-Control':'no-store'});res.end(JSON.stringify({error:status===503?'저장하지 못했어요. 잠시 후 다시 시도해 주세요.':error.message}));
