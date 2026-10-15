@@ -81,3 +81,10 @@ Windows에 Edge가 있다면 환경변수 `BROWSER_CHANNEL=msedge`로 브라우�
 로컬 SQLite 개발 투표는 공개 Supabase로 자동 이전하지 않습니다. 서버에서 링크와 이벤트를 90일 기준으로 정리합니다.
 
 이 패키지는 로컬 빌드와 PostgreSQL 호환 기능 테스트를 위한 것입니다. 실제 Supabase 접속·Vercel 라우팅·공개 도메인 검증은 환경변수와 프록시 연결 후 별도로 완료해야 합니다.
+
+
+## 현재 연결 주소
+
+공개 주소: https://www.abcdana.com/hair-mong
+Vercel 원본: https://hair-mong.vercel.app/hair-mong
+Supabase TLS 연결에는 server/certs/supabase-ca.crt의 공식 CA를 사용하며 인증서·호스트 검증을 유지합니다. DATABASE_URL의 SSL 쿼리 옵션은 명시적인 안전 설정을 덮어쓰지 않도록 제거합니다.

@@ -5,7 +5,7 @@ const url=new URL(target);
 if(url.protocol!=='https:'||!url.hostname.endsWith('.vercel.app')||url.username||url.password||url.pathname!=='/'||url.search||url.hash)throw Error('Use the permanent HTTPS project domain ending in .vercel.app, without a path.');
 const config=existingFile?JSON.parse(await readFile(existingFile,'utf8')):{};
 if(config.routes)throw Error('Existing legacy routes need manual merging; do not overwrite the portfolio configuration.');
-const rules=[{source:'/hair-mong',destination:`${url.origin}/hair-mong`},{source:'/hair-mong/:path*',destination:`${url.origin}/hair-mong/:path*`},{source:'/api/hair-mong/:path*',destination:`${url.origin}/api/hair-mong/:path*`}];
+const rules=[{source:'/hair-mong/share/:slug/',destination:`${url.origin}/hair-mong/share/:slug/index.html`},{source:'/hair-mong/share/:slug',destination:`${url.origin}/hair-mong/share/:slug/index.html`},{source:'/hair-mong',destination:`${url.origin}/hair-mong`},{source:'/hair-mong/:path*',destination:`${url.origin}/hair-mong/:path*`},{source:'/api/hair-mong/:path*',destination:`${url.origin}/api/hair-mong/:path*`}];
 const owned=new Set(rules.map(r=>r.source));config.rewrites=[...rules,...(config.rewrites||[]).filter(r=>!owned.has(r.source))];
 await writeFile('abcdana.vercel.json',JSON.stringify(config,null,2)+'\n');
 console.log('Created abcdana.vercel.json. Review and place it as vercel.json in the existing abcdana repository, then redeploy that project.');
