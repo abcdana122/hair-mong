@@ -24,5 +24,8 @@ try{
  await p.getByRole('button',{name:'친구 눈에는 내가 어떤 헤어몽일까?',exact:true}).click();await p.getByText('아직 친구들의 선택이 없어요.').waitFor();
  const saved=await p.evaluate(()=>JSON.parse(localStorage.getItem('hair-ego-results-v2'))[0]);const b=await browser.newContext(),f=await b.newPage();await f.goto(origin+'/hair-mong/friend/'+saved.publicToken);await f.locator('.friend-grid button').first().click();await f.getByRole('button',{name:'묶묶이로 선택하기'}).click();await f.getByRole('heading',{name:/선택 완료/}).waitFor();
  await p.reload();await p.getByText('취향은 패션위크, 현실은 머리끈.').waitFor();for(const width of [320,390,480]){await p.setViewportSize({width,height:844});assert.ok(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));}
+ const tied=await browser.newContext();const t=await tied.newPage();await t.goto(origin+'/hair-mong');
+ await t.evaluate(()=>sessionStorage.setItem('hair-ego-session-v2',JSON.stringify({answers:{Q01:0,Q02:0,Q03:0,Q04:0,Q05:0,Q06:2,Q07:0,Q08:3},step:7,screen:'quiz'})));await t.reload();await t.locator('.options>button').nth(3).click();await t.getByRole('heading',{name:'복구요정',exact:true}).waitFor();assert.equal(await t.getByText('더 나 같은 애는?').count(),0);
+ await t.evaluate(()=>sessionStorage.setItem('hair-ego-session-v2',JSON.stringify({answers:{Q01:0,Q02:0,Q03:0,Q04:0,Q05:0,Q06:2,Q07:0,Q08:3},step:7,screen:'tie'})));await t.reload();await t.getByRole('heading',{name:'복구요정',exact:true}).waitFor();await tied.close();
  console.log('PASS standalone /hair-mong, download, PostgreSQL friend vote, refresh, mobile widths');
 }finally{await browser.close();await new Promise(r=>server.close(r));await pg.close();}
