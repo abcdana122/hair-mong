@@ -9,6 +9,8 @@ const DAY=86400000;
 const limits=new Map();
 export async function handleVote(req,res,db,{origin,adminKey='',now=Date.now}){
  async function clean(){await db.prepare('DELETE FROM results WHERE expires_at <= ?').run(now());await db.prepare('DELETE FROM events WHERE day < ?').run(new Date(now()-90*DAY).toISOString().slice(0,10));}
+ const allowedOrigins=new Set([new URL(origin).origin]);
+ if(new URL(origin).origin==='https://abcdana.com')allowedOrigins.add('https://www.abcdana.com');
  const json=(res,status,body)=>{res.writeHead(status,{'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store'});res.end(JSON.stringify(body));};
  const countEvent=async(name,id=token())=>(await db.prepare('INSERT OR IGNORE INTO events (id,name,day) VALUES (?,?,?)').run(id,name,new Date(now()).toISOString().slice(0,10)));
  const auth=(req,row)=>{const secret=req.headers.authorization?.replace(/^Bearer /,'');return validKey(secret)&&hash(secret)===row.owner_hash;};
@@ -20,7 +22,7 @@ export async function handleVote(req,res,db,{origin,adminKey='',now=Date.now}){
   try{
    if(path.startsWith('/api/')) {
     await clean();
-    if(req.method!=='GET'&&req.headers.origin!==new URL(origin).origin)return json(res,403,{error:'이 사이트에서 다시 시도해 주세요.'});
+    if(req.method!=='GET'&&!allowedOrigins.has(req.headers.origin))return json(res,403,{error:'이 사이트에서 다시 시도해 주세요.'});
     if(req.method!=='GET'&&!req.headers['content-type']?.startsWith('application/json'))return json(res,415,{error:'JSON 요청이 필요해요.'});
     let cookie=(req.headers.cookie||'').split(';').map(s=>s.trim()).find(s=>s.startsWith('he_browser='))?.slice(11);
     if(!validKey(cookie)){cookie=token();res.setHeader('Set-Cookie',`he_browser=${cookie}; Path=/; HttpOnly; SameSite=Lax; Max-Age=31536000${origin.startsWith('https:')?'; Secure':''}`);}
