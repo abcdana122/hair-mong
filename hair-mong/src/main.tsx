@@ -15,6 +15,7 @@ import {FriendPage} from './components/FriendPage';
 import './style.css';
 
 const sessionKey='hair-ego-session-v2';
+function resetSessionForHome(){try{sessionStorage.setItem(sessionKey,JSON.stringify({answers:{},step:0,screen:'home'}));}catch{/* navigation still works without storage */}}
 function initialState(){
  const fallback={answers:{} as Answers,step:0,screen:'home',result:null as SavedResult|null};
  if(new URLSearchParams(location.search).has('start'))return {...fallback,screen:'quiz'};
@@ -48,7 +49,7 @@ function Privacy({close}:{close:()=>void}){
   <button className="primary" onClick={()=>ref.current?.close()}>알겠어요</button>
  </dialog>;
 }
-function BrandIntro(){return <aside className="brand-intro brand-visible"><Logo/><h3>원하는 머리,<br/>내 머리에서는 어떨까?</h3><p>HairTwin은 모발 상태를 반영한 헤어 시뮬레이션 기술을 개발하고 있습니다.</p></aside>;}
+function BrandIntro(){return <aside className="brand-intro brand-visible"><a href="/hair-mong" onClick={resetSessionForHome} aria-label="헤어몽 홈"><Logo/></a><h3>원하는 머리,<br/>내 머리에서는 어떨까?</h3><p>HairTwin은 모발 상태를 반영한 헤어 시뮬레이션 기술을 개발하고 있습니다.</p></aside>;}
 function App(){
  const [initial]=useState(initialState),[answers,setAnswers]=useState(initial.answers),[step,setStep]=useState(initial.step),[screen,setScreen]=useState(initial.screen),[result,setResult]=useState(initial.result);
  const [busy,setBusy]=useState(false),[toast,setToast]=useState(''),[privacy,setPrivacy]=useState(false);
@@ -70,7 +71,7 @@ function App(){
   setTimeout(()=>{lock.current=false;setBusy(false);if(step<questions.length-1)setStep(step+1);else if(complete(next)){setScreen('loading');setTimeout(()=>{finish(score(next).candidates[0].slug);},700);}else setScreen('home');},160);
  };
  const download=async()=>{if(!character||busy)return;setBusy(true);try{await savePng(character);track('result_download');setToast('이미지를 저장했어요. 다운로드를 확인해 주세요.');}catch{setToast('이미지를 저장하지 못했어요. 다시 시도하거나 화면을 캡처해 주세요.');}finally{setBusy(false);}};
- return <><header className="header"><a href="/hair-mong" aria-label="헤어몽 홈"><Logo/><span className="brand-sub">헤어몽 테스트</span></a></header><main ref={main}>
+ return <><header className="header"><a href="/hair-mong" onClick={resetSessionForHome} aria-label="헤어몽 홈"><Logo/><span className="brand-sub">헤어몽 테스트</span></a></header><main ref={main}>
  {friend?<FriendPage token={pathToken}/>:shared&&!character?<section className="simple"><h1>결과를 찾을 수 없어요.</h1><button className="primary" onClick={start}>내 헤어몽 찾기</button></section>:
  (shared||screen==='result')&&character?<section className="result">
   <ResultCard character={character}/>
