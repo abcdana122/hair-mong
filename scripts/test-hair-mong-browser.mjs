@@ -19,7 +19,7 @@ try{
  const a=await browser.newContext({viewport:{width:390,height:844}}),p=await a.newPage();
  await p.goto(origin+'/hair-mong');await p.getByRole('button',{name:'내 머리의 속마음 듣기'}).click();
  for(let i=0;i<8;i++){await p.locator('.options>button').first().click();await p.waitForTimeout(200);}
- await p.getByRole('heading',{name:'줍줍이',exact:true}).waitFor();await p.evaluate(()=>document.fonts.ready);assert.ok(await p.locator('.brand-visible').isVisible());
+ await p.getByRole('heading',{name:'줍줍이',exact:true}).waitFor();await p.evaluate(()=>document.fonts.ready);await p.locator('.receipt .mascot img').evaluate(image=>image.decode());assert.ok(await p.locator('.brand-visible').isVisible());
  const dl=p.waitForEvent('download');await p.getByRole('button',{name:'결과 이미지 저장',exact:true}).click();await (await dl).saveAs('test-results/download.png');
  await p.getByRole('button',{name:'친구 눈에는 내가 어떤 헤어몽일까?',exact:true}).click();await p.getByText('아직 친구들의 선택이 없어요.').waitFor();
  const saved=await p.evaluate(()=>JSON.parse(localStorage.getItem('hair-ego-results-v2'))[0]);const b=await browser.newContext(),f=await b.newPage();await f.goto(origin+'/hair-mong/friend/'+saved.publicToken);await f.locator('.friend-grid button').first().click();await f.getByRole('button',{name:'묶묶이로 선택하기'}).click();await f.getByRole('heading',{name:/선택 완료/}).waitFor();

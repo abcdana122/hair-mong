@@ -88,3 +88,9 @@ Windows에 Edge가 있다면 환경변수 `BROWSER_CHANNEL=msedge`로 브라우�
 공개 주소: https://www.abcdana.com/hair-mong
 Vercel 원본: https://hair-mong.vercel.app/hair-mong
 Supabase TLS 연결에는 server/certs/supabase-ca.crt의 공식 CA를 사용하며 인증서·호스트 검증을 유지합니다. DATABASE_URL의 SSL 쿼리 옵션은 명시적인 안전 설정을 덮어쓰지 않도록 제거합니다.
+
+
+## 자동 결과와 캐릭터 v2
+
+동점 선택 화면을 없애고 응답 수 → 문항 가중치 → 고정 우선순위로 단일 결과를 확정합니다. 규칙은 SCORING.md, 전수 검사는 npm run test:scoring을 참조하세요.
+8종 입체 캐릭터는 hair-mong/public/characters/v2에 있습니다. 원본 SVG는 보존합니다. 생성 프롬프트와 분위기 참고 출처는 design/character-generation-v2.json에 기록했습니다. 캐릭터 모음은 /hair-mong/character-preview.html에서 볼 수 있습니다. UI 또는 캐릭터 변경 후 npm run render:cards로 저장 이미지를 갱신하세요.

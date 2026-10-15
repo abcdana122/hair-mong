@@ -63,3 +63,4 @@ footer{max-width:432px;margin:18px auto 0;padding:23px 24px calc(16px + env(safe
 @media(max-width:359px){.poster-name h1{font-size:39px}.box-doodle.spark{width:32px}.poster-habits li{padding:12px 15px}}
 
 .brand-visible{padding:24px 20px;background:#fff4f5;border:1px solid #ffe0e5;border-radius:14px}.brand-visible h3{font-size:20px;line-height:1.5;margin:17px 0 10px}.brand-visible p{padding:0;font-size:13px}.brand-visible .brand-logo img{width:145px;height:30px}
+.mascot img{display:block;width:100%;height:100%;object-fit:contain;user-select:none}.poster-character .mascot{position:relative;z-index:1}

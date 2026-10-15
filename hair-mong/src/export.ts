@@ -1,7 +1,7 @@
 import type {Character} from './logic';
 // Rendered from ResultCard at 3x resolution; never rebuild text with separate canvas coordinates.
 export async function savePng(c:Character){
- const response=await fetch(`/hair-mong/og/${encodeURIComponent(c.slug)}.png?v=poster-3x-1`);
+ const response=await fetch(`/hair-mong/og/${encodeURIComponent(c.slug)}.png?v=mong-clay-v2`);
  if(!response.ok||!response.headers.get('content-type')?.includes('image/png'))throw new Error('Result image unavailable');
  const source=await response.blob(),url=URL.createObjectURL(source);
  try{

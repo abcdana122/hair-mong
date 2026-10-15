@@ -12,7 +12,8 @@
     "test": "node scripts/test-hair-mong.mjs",
     "test:browser": "node scripts/test-hair-mong-browser.mjs",
     "proxy:config": "node scripts/proxy-config.mjs",
-    "render:cards": "node scripts/render-cards.mjs"
+    "render:cards": "node scripts/render-cards.mjs",
+    "test:scoring": "tsx --test tests/scoring.test.ts"
   },
   "dependencies": {
     "pg": "^8.23.1",
@@ -23,8 +24,9 @@
     "@electric-sql/pglite": "^0.5.10",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
+    "playwright": "^1.56.0",
+    "tsx": "^4.23.15",
     "typescript": "^5.8.3",
-    "vite": "^8.0.12",
-    "playwright": "^1.56.0"
+    "vite": "^8.0.12"
   }
 }

@@ -1,3 +1,4 @@
 import type {Character} from '../logic';
-import {characterSvg} from '../characters';
-export function Mascot({c,className=''}:{c:Character;className?:string}){return <div className={`mascot ${className}`} role="img" aria-label={c.name} dangerouslySetInnerHTML={{__html:characterSvg(c)}}/>;}
+export function Mascot({c,className=''}:{c:Character;className?:string}){
+ return <div className={`mascot ${className}`} role="img" aria-label={c.name}><img src={`/hair-mong/characters/v2/${c.slug}.png`} alt="" width="1280" height="1280" draggable={false} loading="lazy" decoding="async"/></div>;
+}
