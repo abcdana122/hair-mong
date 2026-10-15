@@ -1,0 +1,74 @@
+{
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/hair-mong",
+      "permanent": false
+    },
+    {
+      "source": "/hair-ego",
+      "destination": "/hair-mong",
+      "permanent": true
+    },
+    {
+      "source": "/hair-ego/:path*",
+      "destination": "/hair-mong/:path*",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/api/hair-mong/:path*",
+      "destination": "/api/hair-mong?path=:path*"
+    },
+    {
+      "source": "/hair-mong/friend/:token",
+      "destination": "/hair-mong/index.html"
+    },
+    {
+      "source": "/hair-mong",
+      "destination": "/hair-mong/index.html"
+    },
+    {
+      "source": "/hair-mong/",
+      "destination": "/hair-mong/index.html"
+    },
+    {
+      "source": "/hair-mong/share/:slug",
+      "destination": "/hair-mong/share/:slug/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/hair-mong/friend/:path*",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow, noarchive"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/api/hair-mong/:path*",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    }
+  ],
+  "functions": {
+    "api/hair-mong.js": {
+      "includeFiles": "hair-mong/src/content.json",
+      "maxDuration": 30
+    }
+  },
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": null
+}

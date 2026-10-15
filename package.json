@@ -1,0 +1,30 @@
+{
+  "name": "hair-mong",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0 <25"
+  },
+  "scripts": {
+    "dev": "vite hair-mong --config hair-mong/vite.config.js",
+    "build": "tsc --noEmit -p hair-mong/tsconfig.json && vite build hair-mong --config hair-mong/vite.config.js && node scripts/hair-mong-share.mjs",
+    "test": "node scripts/test-hair-mong.mjs",
+    "test:browser": "node scripts/test-hair-mong-browser.mjs",
+    "proxy:config": "node scripts/proxy-config.mjs",
+    "render:cards": "node scripts/render-cards.mjs"
+  },
+  "dependencies": {
+    "pg": "^8.23.1",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.10",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "typescript": "^5.8.3",
+    "vite": "^8.0.12",
+    "playwright": "^1.56.0"
+  }
+}
