@@ -3,9 +3,9 @@ export const characters = content.characters;
 export const questions: {id:string;kind:string;question:string;helper:string;allow_skip:boolean;step:number;options:{label:string;quote?:string;score_type?:string;survey_value?:string}[]}[] = content.questions.filter(q=>q.kind==='scored').map((q,i)=>({...q,step:i+1}));
 export type Character = typeof characters[number];
 export type Answers = Record<string, number | null>;
-// A full selection is 100 units; all question bonuses together are only 36.
+// A full selection is 100 units; all question bonuses together are only 55.
 // Thus bonuses can resolve a tie but cannot overturn a one-vote lead.
-export const questionBonus:Record<string,number>={Q01:1,Q02:8,Q03:4,Q04:7,Q05:3,Q06:6,Q07:5,Q08:2};
+export const questionBonus:Record<string,number>={Q01:1,Q02:8,Q03:4,Q04:7,Q05:3,Q06:6,Q07:5,Q08:2,S01:9,S02:10};
 // Final stable fallback: care/detail/practical actions before hypothetical preferences.
 export const resultPriority=['bokguyojeong','gakjabi','mukmuki','jamjami','garaeopi','ssakdugi','jupjupi','challangmong'];
 export function score(answers: Answers) {

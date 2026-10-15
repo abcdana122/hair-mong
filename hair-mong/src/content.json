@@ -211,29 +211,32 @@
     },
     {
       "id": "S01",
-      "kind": "survey",
-      "question": "미용실에서 사진을 보여줬는데, 생각했던 머리와 달랐던 적 있어?",
+      "kind": "scored",
+      "question": "사진이랑 조금 다른 머리. 거울을 본 나는?",
       "options": [
         {
-          "label": "응, 자주 있어",
-          "survey_value": "frequent"
+          "quote": "여기만 조금 더 잘라볼까요?",
+          "label": "마음에 걸리는 부분을 바로 고쳐본다",
+          "score_type": "ssakdugi"
         },
         {
-          "label": "한두 번 있어",
-          "survey_value": "sometimes"
+          "quote": "어? 이것도 꽤 괜찮은데?",
+          "label": "생각 못 한 스타일을 즐겨본다",
+          "score_type": "garaeopi"
         },
         {
-          "label": "아직 없어",
-          "survey_value": "never"
+          "quote": "잠깐, 어디가 다른 거지?",
+          "label": "사진과 거울을 번갈아 보며 차이를 찾는다",
+          "score_type": "gakjabi"
         },
         {
-          "label": "미용실에서 머리를 해본 적이 거의 없어",
-          "survey_value": "not_applicable"
+          "quote": "집에서 편하게 만지면 되겠지.",
+          "label": "크게 신경 쓰지 않고 일단 나온다",
+          "score_type": "jamjami"
         }
       ],
-      "helper": "다 하고 거울을 봤을 때 어땠는지 떠올려봐.",
-      "purpose": "원하는 헤어스타일 vs 실제 결과의 차이 / HairTwin 문제 인식",
-      "allow_skip": true,
+      "helper": "분명 이 사진을 보여드렸는데…?",
+      "allow_skip": false,
       "step": 4
     },
     {
@@ -328,29 +331,32 @@
     },
     {
       "id": "S02",
-      "kind": "survey",
-      "question": "미용실 가기 전, 딱 하나 미리 알 수 있다면?",
+      "kind": "scored",
+      "question": "미용실 예약 전날, 머릿속에 맴도는 건?",
       "options": [
         {
-          "label": "내 머리카락으로 어떤 스타일을 할 수 있는지",
-          "survey_value": "possible_styles"
+          "quote": "내 머리로도 저 느낌이 나려나?",
+          "label": "완성된 내 모습을 상상한다",
+          "score_type": "challangmong"
         },
         {
-          "label": "매일 머리 손질에 얼마나 걸리는지",
-          "survey_value": "styling_time"
+          "quote": "아침에 금방 준비할 수 있겠지?",
+          "label": "매일 손질하는 데 걸릴 시간을 생각한다",
+          "score_type": "mukmuki"
         },
         {
-          "label": "원하는 머리를 미용사에게 어떻게 설명할지",
-          "survey_value": "communication"
+          "quote": "이 느낌을 어떻게 설명하지?",
+          "label": "원하는 포인트가 잘 보이는 사진을 고른다",
+          "score_type": "jupjupi"
         },
         {
-          "label": "지금 내 머리에 어떤 시술을 조심해야 할지",
-          "survey_value": "hair_condition"
+          "quote": "지금 머릿결에 무리는 없을까?",
+          "label": "내 머리가 감당할 수 있을지 먼저 생각한다",
+          "score_type": "bokguyojeong"
         }
       ],
-      "helper": "사진 고르는 것 말고도 궁금한 게 많지.",
-      "purpose": "HairTwin 기능 관심도 파악 / 부담 없는 사전 소개",
-      "allow_skip": true,
+      "helper": "내일 머리 하고 나면 어떨까?",
+      "allow_skip": false,
       "step": 8
     },
     {

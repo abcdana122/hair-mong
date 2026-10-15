@@ -1,0 +1,79 @@
+{
+  "tool": "built-in image_gen",
+  "reference": {
+    "role": "style only",
+    "path": "public/characters/v2/mukmuki.png"
+  },
+  "assets": [
+    {
+      "id": "Q01",
+      "prompt": "Use case: illustration-story. Asset type: landscape situation illustration for a Korean hair personality quiz. Make one original 16:9 horizontal illustration with transparent background, isolated compact scene centered with 12% clear padding, all objects fully visible. Style matches reference ONLY in soft rounded matte clay/silicone collectible forms, not its character identity: modern clean Korean editorial 3D miniature, pillowy forms, tiny dark dot eyes, minimal mouth, warm ivory skin, gentle coral pink #FF4A5E accents, muted mint/lavender. SAME human protagonist across scenes: young adult, gender-neutral face, rounded dark chocolate bob hairstyle, cream top. Show situation BEFORE a choice, do not favor answers. Very few simple props, clear at small mobile size, no outline, no typography, no text, no watermark, no frame, no gradient background, no busy room. Transparent alpha with subtle contact shadow only. Scene: A young adult with a simple rounded dark bob hairstyle and cream sweatshirt holding a coral smartphone, pausing at a hairstyle photo. Three-quarter view, blank photo card with a sculpted hair silhouette on screen, curious neutral expression.",
+      "original": "C:\\Users\\abcda\\.codex\\generated_images\\01a1260a-0b15-70b2-9f16-6c6a98bf1994\\exec-2a420f7c-debf-4c3d-968f-c1c55dbf51f5.png",
+      "png": "public/questions/v3/Q01.png",
+      "webp": "public/questions/v3/Q01.webp"
+    },
+    {
+      "id": "Q02",
+      "prompt": "Use case: illustration-story. Asset type: landscape situation illustration for a Korean hair personality quiz. Make one original 16:9 horizontal illustration with transparent background, isolated compact scene centered with 12% clear padding, all objects fully visible. Style matches reference ONLY in soft rounded matte clay/silicone collectible forms, not its character identity: modern clean Korean editorial 3D miniature, pillowy forms, tiny dark dot eyes, minimal mouth, warm ivory skin, gentle coral pink #FF4A5E accents, muted mint/lavender. SAME human protagonist across scenes: young adult, gender-neutral face, rounded dark chocolate bob hairstyle, cream top. Show situation BEFORE a choice, do not favor answers. Very few simple props, clear at small mobile size, no outline, no typography, no text, no watermark, no frame, no gradient background, no busy room. Transparent alpha with subtle contact shadow only. Scene: The same rounded dark-bob young adult in a cream sweatshirt stands before an oval mint mirror with mildly tousled hair, a small clock and bag nearby, about to leave home. Nothing has been chosen yet.",
+      "original": "C:\\Users\\abcda\\.codex\\generated_images\\01a1260a-0b15-70b2-9f16-6c6a98bf1994\\exec-aa12b16f-7c68-47ce-9b46-5692aca096c7.png",
+      "png": "public/questions/v3/Q02.png",
+      "webp": "public/questions/v3/Q02.webp"
+    },
+    {
+      "id": "Q03",
+      "prompt": "Use case: illustration-story. Asset type: landscape situation illustration for a Korean hair personality quiz. Make one original 16:9 horizontal illustration with transparent background, isolated compact scene centered with 12% clear padding, all objects fully visible. Style matches reference ONLY in soft rounded matte clay/silicone collectible forms, not its character identity: modern clean Korean editorial 3D miniature, pillowy forms, tiny dark dot eyes, minimal mouth, warm ivory skin, gentle coral pink #FF4A5E accents, muted mint/lavender. SAME human protagonist across scenes: young adult, gender-neutral face, rounded dark chocolate bob hairstyle, cream top. Show situation BEFORE a choice, do not favor answers. Very few simple props, clear at small mobile size, no outline, no typography, no text, no watermark, no frame, no gradient background, no busy room. Transparent alpha with subtle contact shadow only. Scene: The same rounded dark-bob young adult wearing a soft peach salon cape seated in a mint salon chair facing an oval mirror, a stylist hand gently gesturing at the side, calm anticipation before deciding a style.",
+      "original": "C:\\Users\\abcda\\.codex\\generated_images\\01a1260a-0b15-70b2-9f16-6c6a98bf1994\\exec-3dc04f61-fb88-4d22-8c45-517a5419bcbe.png",
+      "png": "public/questions/v3/Q03.png",
+      "webp": "public/questions/v3/Q03.webp"
+    },
+    {
+      "id": "S01",
+      "prompt": "Use case: illustration-story. Asset type: landscape situation illustration for a Korean hair personality quiz. Make one original 16:9 horizontal illustration with transparent background, isolated compact scene centered with 12% clear padding, all objects fully visible. Style matches reference ONLY in soft rounded matte clay/silicone collectible forms, not its character identity: modern clean Korean editorial 3D miniature, pillowy forms, tiny dark dot eyes, minimal mouth, warm ivory skin, gentle coral pink #FF4A5E accents, muted mint/lavender. SAME human protagonist across scenes: young adult, gender-neutral face, rounded dark chocolate bob hairstyle, cream top. Show situation BEFORE a choice, do not favor answers. Very few simple props, clear at small mobile size, no outline, no typography, no text, no watermark, no frame, no gradient background, no busy room. Transparent alpha with subtle contact shadow only. Scene: The same rounded dark-bob young adult with cream top holding a coral phone beside an oval mirror. Phone shows a simple sleek bob silhouette; mirror shows a subtly wavier bob. Mildly curious thoughtful face, no exaggerated failure, hairstyle comparison before reacting.",
+      "original": "C:\\Users\\abcda\\.codex\\generated_images\\01a1260a-0b15-70b2-9f16-6c6a98bf1994\\exec-8c0d2286-42e5-49ad-9bc0-11472f60c8f3.png",
+      "png": "public/questions/v3/S01.png",
+      "webp": "public/questions/v3/S01.webp"
+    },
+    {
+      "id": "Q04",
+      "prompt": "Use case: illustration-story. Asset type: landscape situation illustration for a Korean hair personality quiz. Make one original 16:9 horizontal illustration with transparent background, isolated compact scene centered with 12% clear padding, all objects fully visible. Style matches reference ONLY in soft rounded matte clay/silicone collectible forms, not its character identity: modern clean Korean editorial 3D miniature, pillowy forms, tiny dark dot eyes, minimal mouth, warm ivory skin, gentle coral pink #FF4A5E accents, muted mint/lavender. SAME human protagonist across scenes: young adult, gender-neutral face, rounded dark chocolate bob hairstyle, cream top. Show situation BEFORE a choice, do not favor answers. Very few simple props, clear at small mobile size, no outline, no typography, no text, no watermark, no frame, no gradient background, no busy room. Transparent alpha with subtle contact shadow only. Scene: The same rounded dark-bob young adult in cream pajamas with a tiny crescent moon accessory nearby, considering their fringe before a small mint tabletop mirror. Closed safety scissors rest on the table, not held. Sleepy curious expression at night, no clock numbers.",
+      "original": "C:\\Users\\abcda\\.codex\\generated_images\\01a1260a-0b15-70b2-9f16-6c6a98bf1994\\exec-0bd7ffc7-a59c-4ad8-9f21-8385efdca5e9.png",
+      "png": "public/questions/v3/Q04.png",
+      "webp": "public/questions/v3/Q04.webp"
+    },
+    {
+      "id": "Q05",
+      "prompt": "Use case: illustration-story. Asset type: landscape situation illustration for a Korean hair personality quiz. Make one original 16:9 horizontal illustration with transparent background, isolated compact scene centered with 12% clear padding, all objects fully visible. Style matches reference ONLY in soft rounded matte clay/silicone collectible forms, not its character identity: modern clean Korean editorial 3D miniature, pillowy forms, tiny dark dot eyes, minimal mouth, warm ivory skin, gentle coral pink #FF4A5E accents, muted mint/lavender. SAME human protagonist across scenes: young adult, gender-neutral face, rounded dark chocolate bob hairstyle, cream top. Show situation BEFORE a choice, do not favor answers. Very few simple props, clear at small mobile size, no outline, no typography, no text, no watermark, no frame, no gradient background, no busy room. Transparent alpha with subtle contact shadow only. Scene: The same rounded dark-bob young adult wearing cream sweatshirt standing just outside a doorway as three soft blue raindrops fall beside their slightly frizzy hair. Tiny cloud above, surprised but understated face, no umbrella or styling choice yet.",
+      "original": "C:\\Users\\abcda\\.codex\\generated_images\\01a1260a-0b15-70b2-9f16-6c6a98bf1994\\exec-fddf92f2-bca5-4aa7-8033-4931850af3fa.png",
+      "png": "public/questions/v3/Q05.png",
+      "webp": "public/questions/v3/Q05.webp"
+    },
+    {
+      "id": "Q06",
+      "prompt": "Use case: illustration-story. Asset type: landscape situation illustration for a Korean hair personality quiz. Make one original 16:9 horizontal illustration with transparent background, isolated compact scene centered with 12% clear padding, all objects fully visible. Style matches reference ONLY in soft rounded matte clay/silicone collectible forms, not its character identity: modern clean Korean editorial 3D miniature, pillowy forms, tiny dark dot eyes, minimal mouth, warm ivory skin, gentle coral pink #FF4A5E accents, muted mint/lavender. SAME human protagonist across scenes: young adult, gender-neutral face, rounded dark chocolate bob hairstyle, cream top. Show situation BEFORE a choice, do not favor answers. Very few simple props, clear at small mobile size, no outline, no typography, no text, no watermark, no frame, no gradient background, no busy room. Transparent alpha with subtle contact shadow only. Scene: The same rounded dark-bob young adult in cream pajamas looking at their softly wavy salon hair in a mint tabletop mirror the next morning. A simple small rising sun at side, observant expression, no styling action yet.",
+      "original": "C:\\Users\\abcda\\.codex\\generated_images\\01a1260a-0b15-70b2-9f16-6c6a98bf1994\\exec-9b1d15dd-bbf0-455b-8cc3-c6c8a45610b7.png",
+      "png": "public/questions/v3/Q06.png",
+      "webp": "public/questions/v3/Q06.webp"
+    },
+    {
+      "id": "S02",
+      "prompt": "Use case: illustration-story. Asset type: landscape situation illustration for a Korean hair personality quiz. Make one original 16:9 horizontal illustration with transparent background, isolated compact scene centered with 12% clear padding, all objects fully visible. Style matches reference ONLY in soft rounded matte clay/silicone collectible forms, not its character identity: modern clean Korean editorial 3D miniature, pillowy forms, tiny dark dot eyes, minimal mouth, warm ivory skin, gentle coral pink #FF4A5E accents, muted mint/lavender. SAME human protagonist across scenes: young adult, gender-neutral face, rounded dark chocolate bob hairstyle, cream top. Show situation BEFORE a choice, do not favor answers. Very few simple props, clear at small mobile size, no outline, no typography, no text, no watermark, no frame, no gradient background, no busy room. Transparent alpha with subtle contact shadow only. Scene: The same rounded dark-bob young adult in cream sweatshirt sitting with a closed coral notebook and phone, considering an upcoming salon visit. A small floating ivory thought bubble contains only a softly curled hair lock and one tiny mint sparkle. Thoughtful neutral expression.",
+      "original": "C:\\Users\\abcda\\.codex\\generated_images\\01a1260a-0b15-70b2-9f16-6c6a98bf1994\\exec-0ec6d07f-a466-4bfe-a162-a7c7b84ea678.png",
+      "png": "public/questions/v3/S02.png",
+      "webp": "public/questions/v3/S02.webp"
+    },
+    {
+      "id": "Q07",
+      "prompt": "Use case: illustration-story. Asset type: landscape situation illustration for a Korean hair personality quiz. Make one original 16:9 horizontal illustration with transparent background, isolated compact scene centered with 12% clear padding, all objects fully visible. Style matches reference ONLY in soft rounded matte clay/silicone collectible forms, not its character identity: modern clean Korean editorial 3D miniature, pillowy forms, tiny dark dot eyes, minimal mouth, warm ivory skin, gentle coral pink #FF4A5E accents, muted mint/lavender. SAME human protagonist across scenes: young adult, gender-neutral face, rounded dark chocolate bob hairstyle, cream top. Show situation BEFORE a choice, do not favor answers. Very few simple props, clear at small mobile size, no outline, no typography, no text, no watermark, no frame, no gradient background, no busy room. Transparent alpha with subtle contact shadow only. Scene: The same rounded dark-bob young adult in cream sweatshirt looking at a small shelf with unbranded coral hair dryer, mint hair essence bottle, lavender comb. Hands relaxed, no product selected. Clean compact shop scene.",
+      "original": "C:\\Users\\abcda\\.codex\\generated_images\\01a1260a-0b15-70b2-9f16-6c6a98bf1994\\exec-ae33df6b-2e11-46d5-bffe-dc8d2c708ad7.png",
+      "png": "public/questions/v3/Q07.png",
+      "webp": "public/questions/v3/Q07.webp"
+    },
+    {
+      "id": "Q08",
+      "prompt": "Use case: illustration-story. Asset type: landscape situation illustration for a Korean hair personality quiz. Make one original 16:9 horizontal illustration with transparent background, isolated compact scene centered with 12% clear padding, all objects fully visible. Style matches reference ONLY in soft rounded matte clay/silicone collectible forms, not its character identity: modern clean Korean editorial 3D miniature, pillowy forms, tiny dark dot eyes, minimal mouth, warm ivory skin, gentle coral pink #FF4A5E accents, muted mint/lavender. SAME human protagonist across scenes: young adult, gender-neutral face, rounded dark chocolate bob hairstyle, cream top. Show situation BEFORE a choice, do not favor answers. Very few simple props, clear at small mobile size, no outline, no typography, no text, no watermark, no frame, no gradient background, no busy room. Transparent alpha with subtle contact shadow only. Scene: The same rounded dark-bob young adult in cream sweatshirt looking at coral smartphone showing a blank incoming speech bubble and two tiny hairstyle silhouettes, a friend asking for hair advice. No text, no outgoing reply, friendly curious expression.",
+      "original": "C:\\Users\\abcda\\.codex\\generated_images\\01a1260a-0b15-70b2-9f16-6c6a98bf1994\\exec-3c2bc4da-b1fc-4281-b104-492479b5de02.png",
+      "png": "public/questions/v3/Q08.png",
+      "webp": "public/questions/v3/Q08.webp"
+    }
+  ]
+}

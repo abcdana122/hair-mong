@@ -94,3 +94,7 @@ Supabase TLS 연결에는 server/certs/supabase-ca.crt의 공식 CA를 사용하
 
 동점 선택 화면을 없애고 응답 수 → 문항 가중치 → 고정 우선순위로 단일 결과를 확정합니다. 규칙은 SCORING.md, 전수 검사는 npm run test:scoring을 참조하세요.
 8종 입체 캐릭터는 hair-mong/public/characters/v2에 있습니다. 원본 SVG는 보존합니다. 생성 프롬프트와 분위기 참고 출처는 design/character-generation-v2.json에 기록했습니다. 캐릭터 모음은 /hair-mong/character-preview.html에서 볼 수 있습니다. UI 또는 캐릭터 변경 후 npm run render:cards로 저장 이미지를 갱신하세요.
+
+## 질문 그림과 첫 화면
+
+10문항은 모두 성향 결과에 반영합니다. SCORING.md에 배점을 기록했습니다. 질문 그림 원본은 hair-mong/public/questions/v3/*.png, 모바일용은 같은 이름의 WebP입니다. 내장 image_gen 생성 프롬프트는 design/question-generation-v3.json입니다. npm run build 후 BROWSER_CHANNEL=msedge npm run test:browser로 애니메이션·10문항·친구 투표·다운로드를 검증할 수 있습니다. 그림을 다시 만들 때 node scripts/prepare-question-images.mjs로 WebP를 준비합니다. /hair-mong/question-preview.html에 그림 모음을 제공합니다.
