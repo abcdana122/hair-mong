@@ -1,0 +1,424 @@
+{
+  "project": "eltica.404 — 헤어 자아 테스트",
+  "working_title": "이 머리 하고 싶은데, 내가 감당 가능함?",
+  "tagline": "머리에도 성격이 있다면.",
+  "subtitle": "내 머리에도 자아가 있다면?",
+  "disclaimer": "재미를 위한 성향 테스트이며 모발 상태·시술 가능성을 진단하지 않습니다.",
+  "characters": [
+    {
+      "id": "C01",
+      "slug": "mukmuki",
+      "name": "묶묶이",
+      "trait": "편리함이 최우선",
+      "one_liner": "결국 집게핀이 이겼음.",
+      "complaint": "머리 풀고 나간다더니 3분 뒤에 또 묶었습니다. 제 의견은 언제 물어보실 건가요?",
+      "demand": "묶어도 예쁜 스타일로 타협해주세요.",
+      "tip": "묶었을 때 얼굴 주변 레이어와 잔머리 연출을 미용사와 상의해 보세요.",
+      "shape": "서로 다른 굵기의 머리카락 세 줄을 둥근 머리끈이 꽉 묶은 형태",
+      "colors": "#F1B6D2 / #FFF0F6",
+      "face_props": "무표정, 큰 곱창밴드, 작은 삐침머리",
+      "share": "나는 묶묶이 나옴. 머리 풀고 나가려던 계획만 319번 세움."
+    },
+    {
+      "id": "C02",
+      "slug": "jamjami",
+      "name": "잠잠이",
+      "trait": "손질보다 잠",
+      "one_liner": "머리는 좀 알아서 해줬으면.",
+      "complaint": "아침 7시에 알람은 맞췄는데 7시 25분에 일어나셨죠. 제 스타일링 시간은 어디 갔나요?",
+      "demand": "5분 안에 되는 머리만 보여주세요.",
+      "tip": "평소 손질 가능한 시간을 미용사에게 먼저 알려주세요.",
+      "shape": "납작한 베개와 수면모가 합쳐진 구름 모양, 앞에 머리카락 한 올",
+      "colors": "#A8C5EE / #EDF4FF",
+      "face_props": "반쯤 감긴 눈, 접힌 수면모, 하품 말풍선",
+      "share": "잠잠이 나옴. 고데기보다 침대가 내 진짜 사랑임."
+    },
+    {
+      "id": "C03",
+      "slug": "jupjupi",
+      "name": "줍줍이",
+      "trait": "사진 저장이 취미",
+      "one_liner": "저장 300장. 예약 0회.",
+      "complaint": "저장 폴더가 또 늘어났습니다. 이 사진들 중 실제로 해볼 건 하나라도 있나요?",
+      "demand": "레퍼런스 중 딱 한 장만 골라주세요.",
+      "tip": "사진을 보여줄 때 특히 마음에 드는 요소(앞머리·길이·컬)를 함께 설명해 보세요.",
+      "shape": "작은 스크랩북 모양의 머리카락 생명체, 양옆으로 사진 카드가 삐져나옴",
+      "colors": "#E9BC70 / #FFF4DB",
+      "face_props": "커다란 사진 더미, 초롱초롱한 눈, 클립",
+      "share": "줍줍이 나옴. 핀터레스트만 보면 이미 헤어모델임."
+    },
+    {
+      "id": "C04",
+      "slug": "ssakdugi",
+      "name": "싹둑이",
+      "trait": "충동적인 변화",
+      "one_liner": "앞머리는 다시 자라니까.",
+      "complaint": "새벽 2시에 가위를 잡는 행동에 대한 사전 협의가 없었습니다.",
+      "demand": "큰 변화는 하루만 고민하고 결정해주세요.",
+      "tip": "커트 전 원하는 길이와 집에서 손질할 방법을 충분히 확인해 보세요.",
+      "shape": "머리카락 끝이 한쪽만 짧게 잘린 삼각 물결 형태",
+      "colors": "#F2A793 / #FFEEE7",
+      "face_props": "싱글벙글 웃음, 비대칭 앞머리, 작은 안전 가위",
+      "share": "싹둑이 나옴. 후회는 미래의 내가 알아서 하겠지."
+    },
+    {
+      "id": "C05",
+      "slug": "gakjabi",
+      "name": "각잡이",
+      "trait": "완성도에 진심",
+      "one_liner": "앞머리 1mm가 하루를 좌우함.",
+      "complaint": "오늘도 앞머리 각도를 확인하기 위해 거울을 12번 봤습니다. 이제 외출해도 될까요?",
+      "demand": "유지 가능한 세팅 루틴을 알려주세요.",
+      "tip": "원하는 마무리 모양과 매일 필요한 스타일링 도구를 상담해 보세요.",
+      "shape": "빗살이 머리처럼 솟아 있는 반듯한 사각형",
+      "colors": "#9FD4BE / #E9F7F0",
+      "face_props": "진지한 눈썹, 미니 체크리스트, 작은 빗",
+      "share": "각잡이 나옴. 내 앞머리만큼은 오차 허용 안 함."
+    },
+    {
+      "id": "C06",
+      "slug": "challangmong",
+      "name": "찰랑몽",
+      "trait": "이상 속 머리 완벽",
+      "one_liner": "머릿속에서는 이미 헤어 광고 찍는 중.",
+      "complaint": "현실의 아침 준비 시간은 5분인데 목표 사진은 매일 화보 촬영 수준입니다.",
+      "demand": "꿈과 현실을 연결할 유지 방법이 필요합니다.",
+      "tip": "원하는 사진과 평소 손질 시간을 함께 보여주며 가능한 대안을 물어보세요.",
+      "shape": "한 가닥의 길고 유연한 S자 리본 머리카락, 별빛 한 개",
+      "colors": "#CBB4F0 / #F3EBFF",
+      "face_props": "반짝이는 눈, 작은 별, 거울 프레임",
+      "share": "찰랑몽 나옴. 머릿속 나는 항상 광고 속 사람임."
+    },
+    {
+      "id": "C07",
+      "slug": "bokguyojeong",
+      "name": "복구요정",
+      "trait": "모발 관리 신중파",
+      "one_liner": "일단 머릿결부터 지키고 얘기하자.",
+      "complaint": "새로운 염색 제안서가 왔습니다. 기존 모발 상태 검토부터 해주시기 바랍니다.",
+      "demand": "변화 전에 손상과 관리 부담을 확인해주세요.",
+      "tip": "최근 탈색·염색·펌 이력을 정확히 알리고 미용사의 모발 상태 확인을 받아보세요.",
+      "shape": "둥근 헤어 에센스 병과 실타래가 결합한 독특한 모양",
+      "colors": "#92CFC4 / #EBFAF7",
+      "face_props": "걱정스러운 눈, 작은 에센스 뚜껑, 방패 스티커",
+      "share": "복구요정 나옴. 바꾸고 싶은데 머릿결이 먼저래."
+    },
+    {
+      "id": "C08",
+      "slug": "garaeopi",
+      "name": "갈아엎이",
+      "trait": "변신이 일상",
+      "one_liner": "지난주에 염색했지만 또 하고 싶음.",
+      "complaint": "지난주 색상 변경 건도 처리 중입니다. 다음 개편안을 벌써 제출하시면 어떡합니까?",
+      "demand": "변신 욕구는 이해합니다. 시술 간격과 부담도 챙겨주세요.",
+      "tip": "최근 시술 이력을 기록해 두고 변화 가능한 범위를 미용사와 상의해 보세요.",
+      "shape": "두 색 면이 회전하는 헤어롤 모양, 머리끝이 뒤집히는 형태",
+      "colors": "#F5B28B / #FFF0E4",
+      "face_props": "흥분한 눈, 양면 컬러, 작은 컬러 브러시",
+      "share": "갈아엎이 나옴. 인생 리셋은 어렵고 머리는 쉽잖아."
+    }
+  ],
+  "questions": [
+    {
+      "id": "Q01",
+      "kind": "scored",
+      "question": "인스타에서 예쁜 머리를 발견했다.",
+      "options": [
+        {
+          "label": "일단 사진부터 저장한다",
+          "score_type": "jupjupi",
+          "quote": "헉 저 머리 너무 예뻐...!"
+        },
+        {
+          "label": "오늘 미용실을 예약할까 고민한다",
+          "score_type": "ssakdugi",
+          "quote": "오늘 예약 자리 있으려나?"
+        },
+        {
+          "label": "어떻게 손질하는지 찾아본다",
+          "score_type": "gakjabi",
+          "quote": "근데 저거 어떻게 말리는 거지?"
+        },
+        {
+          "label": "예쁘긴 한데 손질할 생각에 귀찮다",
+          "score_type": "jamjami",
+          "quote": "예쁘다... 근데 매일 저렇게 해야 돼?"
+        }
+      ],
+      "helper": "스크롤을 멈추게 하는 머리, 꼭 있지.",
+      "allow_skip": false,
+      "step": 1
+    },
+    {
+      "id": "Q02",
+      "kind": "scored",
+      "question": "나가기 10분 전, 머리가 엉망이다.",
+      "options": [
+        {
+          "label": "그냥 묶는다",
+          "score_type": "mukmuki",
+          "quote": "머리끈 어디 갔지?"
+        },
+        {
+          "label": "고데기로 3분만 손본다",
+          "score_type": "gakjabi",
+          "quote": "앞머리만 살리면 돼. 딱 3분!"
+        },
+        {
+          "label": "모자를 쓰고 나간다",
+          "score_type": "jamjami",
+          "quote": "모자 쓰면 아무도 모르겠지?"
+        },
+        {
+          "label": "이참에 평소와 다르게 만져본다",
+          "score_type": "garaeopi",
+          "quote": "잠깐, 이렇게 넘기니까 괜찮은데?"
+        }
+      ],
+      "helper": "시간은 없고, 머리는 말을 안 듣고.",
+      "allow_skip": false,
+      "step": 2
+    },
+    {
+      "id": "Q03",
+      "kind": "scored",
+      "question": "미용실 의자에 앉으면 나는?",
+      "options": [
+        {
+          "label": "저장한 사진 30장을 뒤적인다",
+          "score_type": "jupjupi",
+          "quote": "잠시만요, 사진이 어디 있더라..."
+        },
+        {
+          "label": "안 해본 스타일에 도전한다",
+          "score_type": "garaeopi",
+          "quote": "이번엔 좀 다르게 해볼래요!"
+        },
+        {
+          "label": "머리가 완성된 내 모습을 상상한다",
+          "score_type": "challangmong",
+          "quote": "다 하고 나오면 진짜 예쁘겠다..."
+        },
+        {
+          "label": "손질하기 편한 머리로 부탁한다",
+          "score_type": "mukmuki",
+          "quote": "아침에 손 많이 안 가는 걸로요!"
+        }
+      ],
+      "helper": "“오늘은 어떻게 해드릴까요?”",
+      "allow_skip": false,
+      "step": 3
+    },
+    {
+      "id": "S01",
+      "kind": "survey",
+      "question": "미용실에서 사진을 보여줬는데, 생각했던 머리와 달랐던 적 있어?",
+      "options": [
+        {
+          "label": "응, 자주 있어",
+          "survey_value": "frequent"
+        },
+        {
+          "label": "한두 번 있어",
+          "survey_value": "sometimes"
+        },
+        {
+          "label": "아직 없어",
+          "survey_value": "never"
+        },
+        {
+          "label": "미용실에서 머리를 해본 적이 거의 없어",
+          "survey_value": "not_applicable"
+        }
+      ],
+      "helper": "다 하고 거울을 봤을 때 어땠는지 떠올려봐.",
+      "purpose": "원하는 헤어스타일 vs 실제 결과의 차이 / HairTwin 문제 인식",
+      "allow_skip": true,
+      "step": 4
+    },
+    {
+      "id": "Q04",
+      "kind": "scored",
+      "question": "새벽 2시, 갑자기 앞머리를 자르고 싶다.",
+      "options": [
+        {
+          "label": "이미 가위를 들었다",
+          "score_type": "ssakdugi",
+          "quote": "조금만 자르면 되잖아?"
+        },
+        {
+          "label": "자른 모습을 상상하니 벌써 신난다",
+          "score_type": "challangmong",
+          "quote": "앞머리 내린 나... 꽤 괜찮을지도?"
+        },
+        {
+          "label": "자르고 나서 어떻게 관리할지 걱정한다",
+          "score_type": "bokguyojeong",
+          "quote": "잘랐다가 매일 손질해야 하는 거 아냐?"
+        },
+        {
+          "label": "앞머리 사진만 계속 저장한다",
+          "score_type": "jupjupi",
+          "quote": "이 앞머리도 예쁘고, 저것도 예쁘네..."
+        }
+      ],
+      "helper": "낮에는 괜찮았는데, 갑자기 바꾸고 싶어졌다.",
+      "allow_skip": false,
+      "step": 5
+    },
+    {
+      "id": "Q05",
+      "kind": "scored",
+      "question": "머리를 열심히 만졌는데 비가 온다.",
+      "options": [
+        {
+          "label": "부스스해진 머리에 에센스를 바른다",
+          "score_type": "bokguyojeong",
+          "quote": "아, 머리 다 부스스해졌네..."
+        },
+        {
+          "label": "바로 묶어버린다",
+          "score_type": "mukmuki",
+          "quote": "됐다. 그냥 묶자."
+        },
+        {
+          "label": "오늘은 포기한다",
+          "score_type": "jamjami",
+          "quote": "뭐 어때, 비 오는 날인데."
+        },
+        {
+          "label": "흐트러진 머리를 다시 만진다",
+          "score_type": "gakjabi",
+          "quote": "아직 살릴 수 있어. 거울 어디야?"
+        }
+      ],
+      "helper": "분명 나올 땐 괜찮았는데.",
+      "allow_skip": false,
+      "step": 6
+    },
+    {
+      "id": "Q06",
+      "kind": "scored",
+      "question": "미용실 다녀온 다음 날, 나는?",
+      "options": [
+        {
+          "label": "벌써 다음에 할 머리를 생각한다",
+          "score_type": "garaeopi",
+          "quote": "다음엔 무슨 머리 하지?"
+        },
+        {
+          "label": "앞으로도 쭉 이렇게 예쁠 거라 믿는다",
+          "score_type": "challangmong",
+          "quote": "이제 매일 이렇게 예쁜 건가?"
+        },
+        {
+          "label": "머릿결 관리에 쓸 제품과 방법을 찾아본다",
+          "score_type": "bokguyojeong",
+          "quote": "이 머릿결 오래 가려면 뭘 써야 하지?"
+        },
+        {
+          "label": "거울을 보며 혼자 조금 더 손본다",
+          "score_type": "ssakdugi",
+          "quote": "여기만 조금 더 손보면 딱인데."
+        }
+      ],
+      "helper": "어제는 미용사 손에, 오늘은 내 손에.",
+      "allow_skip": false,
+      "step": 7
+    },
+    {
+      "id": "S02",
+      "kind": "survey",
+      "question": "미용실 가기 전, 딱 하나 미리 알 수 있다면?",
+      "options": [
+        {
+          "label": "내 머리카락으로 어떤 스타일을 할 수 있는지",
+          "survey_value": "possible_styles"
+        },
+        {
+          "label": "매일 머리 손질에 얼마나 걸리는지",
+          "survey_value": "styling_time"
+        },
+        {
+          "label": "원하는 머리를 미용사에게 어떻게 설명할지",
+          "survey_value": "communication"
+        },
+        {
+          "label": "지금 내 머리에 어떤 시술을 조심해야 할지",
+          "survey_value": "hair_condition"
+        }
+      ],
+      "helper": "사진 고르는 것 말고도 궁금한 게 많지.",
+      "purpose": "HairTwin 기능 관심도 파악 / 부담 없는 사전 소개",
+      "allow_skip": true,
+      "step": 8
+    },
+    {
+      "id": "Q07",
+      "kind": "scored",
+      "question": "헤어 제품이나 도구를 고를 때, 나는?",
+      "options": [
+        {
+          "label": "후기와 사용법을 꼼꼼히 비교한다",
+          "score_type": "gakjabi",
+          "quote": "후기는 좋은데, 쓰기는 쉬운가?"
+        },
+        {
+          "label": "새로운 스타일을 해볼 수 있는 제품에 끌린다",
+          "score_type": "garaeopi",
+          "quote": "이거면 안 해본 머리도 해보겠는데?"
+        },
+        {
+          "label": "머릿결을 보호해 주는지 먼저 확인한다",
+          "score_type": "bokguyojeong",
+          "quote": "머릿결에는 괜찮겠지?"
+        },
+        {
+          "label": "광고처럼 찰랑거릴 내 머리를 상상한다",
+          "score_type": "challangmong",
+          "quote": "나도 쓰면 저렇게 찰랑거리겠지?"
+        }
+      ],
+      "helper": "장바구니에 담기 전, 가장 먼저 드는 생각은?",
+      "allow_skip": false,
+      "step": 9
+    },
+    {
+      "id": "Q08",
+      "kind": "scored",
+      "question": "친구가 어떤 머리로 바꿀지 물어본다.",
+      "options": [
+        {
+          "label": "사진을 20장 보내준다",
+          "score_type": "jupjupi",
+          "quote": "잠깐만. 너한테 딱인 사진 있어!"
+        },
+        {
+          "label": "묶기 편한 머리를 추천한다",
+          "score_type": "mukmuki",
+          "quote": "묶었을 때도 예쁜 게 최고야."
+        },
+        {
+          "label": "같이 고민하다 다음에 바꾸자고 한다",
+          "score_type": "jamjami",
+          "quote": "고르기 어렵다... 다음에 바꿀까?"
+        },
+        {
+          "label": "일단 앞머리부터 바꿔보라고 한다",
+          "score_type": "ssakdugi",
+          "quote": "일단 앞머리부터 바꿔봐!"
+        }
+      ],
+      "helper": "친구는 내 답장을 기다리는 중.",
+      "allow_skip": false,
+      "step": 10
+    }
+  ],
+  "rules": {
+    "scored_question_count": 8,
+    "survey_question_count": 2,
+    "tie_handling": "최고점 동점인 캐릭터만 보여주고 사용자가 더 가까운 유형을 하나 고르게 한다. 이 선택은 동점 결정용이며 별도 점수로 보지 않는다.",
+    "score_method": "scored 질문의 선택지는 지정된 score_type에 정확히 +1. 설문(survey)은 점수에 절대 반영하지 않음.",
+    "share": "결과 유형만 공유. 설문 응답, 테스트 전체 답변은 공유 링크에 넣지 않음."
+  }
+}
