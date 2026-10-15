@@ -64,7 +64,7 @@
   ],
   "functions": {
     "api/hair-mong.js": {
-      "includeFiles": "hair-mong/src/content.json",
+      "includeFiles": "{hair-mong/src/content.json,server/certs/supabase-ca.crt}",
       "maxDuration": 30
     }
   },

@@ -1,4 +1,5 @@
 import pg from 'pg';
+import {readFileSync} from 'node:fs';
 import {handleVote} from '../server/hair-mong-handler.mjs';
 import {database} from '../server/hair-mong-database.mjs';
 let pool;
@@ -7,7 +8,11 @@ export default async function handler(req,res){
  if(route)req.url='/api/hair-mong/'+(Array.isArray(route)?route.join('/'):route);
  const origin=process.env.SITE_URL;
  if(!process.env.DATABASE_URL||!origin){res.statusCode=503;res.setHeader('Content-Type','application/json');return res.end(JSON.stringify({error:'투표 서버를 준비하고 있어요.'}));}
- pool??=new pg.Pool({connectionString:process.env.DATABASE_URL,max:2,idleTimeoutMillis:10000,connectionTimeoutMillis:8000,ssl:{rejectUnauthorized:true}});
+ if(!pool){
+  const connection=new URL(process.env.DATABASE_URL);
+  for(const key of ['sslmode','sslrootcert','sslcert','sslkey'])connection.searchParams.delete(key);
+  pool=new pg.Pool({connectionString:connection.toString(),max:2,idleTimeoutMillis:10000,connectionTimeoutMillis:8000,ssl:{rejectUnauthorized:true,ca:readFileSync(new URL('../server/certs/supabase-ca.crt',import.meta.url),'utf8')}});
+ }
  let client;const headers={};let status=200,payload;
  const buffered={setHeader:(key,value)=>{headers[key]=value;},writeHead:(code,values)=>{status=code;Object.assign(headers,values);},end:value=>{payload=value;}};
  try{
